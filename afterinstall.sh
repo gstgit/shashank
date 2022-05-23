@@ -3,7 +3,7 @@
 cd /home/ubuntu
 sudo apt-get update
 sudo apt-get -y install python3-pip
-sudo apt install python3-pip python3 nginx-dev -y
+sudo apt install python3-pip python3 nginx-dev -Y
 sudo pip3 install virtualenv
 sudo virtualenv env 
 source env/bin/activate
@@ -20,7 +20,7 @@ sudo apt-get install libmysqlclient -y
 pip install mysqlclient
 sudo python3 manage.py makemigrations
 sudo python3 manage.py migrate
-sudo python3 manage.py collectstatic 
+sudo python3 manage.py collectstatic -yes
 sudo ufw allow 80
 sudo chmod -R 777 *
 sudo mv /home/ubuntu/gunicorn.socket  /etc/systemd/system/ 
