@@ -10,15 +10,12 @@ source env/bin/activate
 pip install django gunicorn
 sudo pip install django gunicorn
 cd rare_window_backend
-sudo apt-get install mysql-server-Y
-sudo apt-get install libmysqlclient -y
+sudo apt-get install mysql-server -y
+sudo apt-get install libmysqlclient-dev -y
 pip install mysqlclient
 sudo pip3 install -r requirements.txt
 pip3 install -r requirements.txt
-sudo apt-get install mysql-server-Y
-sudo apt-get install libmysqlclient -y
 deactivate
-
 sudo python3 manage.py makemigrations
 sudo python3 manage.py migrate
 
