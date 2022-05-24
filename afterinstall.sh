@@ -20,6 +20,7 @@ sudo apt-get install libmysqlclient -y
 pip install mysqlclient
 sudo python3 manage.py makemigrations
 sudo python3 manage.py migrate
+
 sudo python3 manage.py collectstatic -yes
 sudo ufw allow 80
 sudo chmod -R 777 *
