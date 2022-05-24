@@ -30,7 +30,11 @@ cd  /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable gunicorn.socket
 sudo systemctl restart gunicorn
+cd /etc/nginx/sites-available/
+sudo rm -r app-site
 sudo mv /home/ubuntu/app-site /etc/nginx/sites-available/
+cd /etc/nginx/sites-enabled/
+sudo rm -r app-site
 sudo ln -s /etc/nginx/sites-available/app-site /etc/nginx/sites-enabled/
 cd /etc/nginx/sites-available/
 sudo rm -r default 
