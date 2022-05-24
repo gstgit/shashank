@@ -80,10 +80,10 @@ DATABASES = {
     # }
       'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'the_rare_windo_db',  
+        'NAME': 'the_rare_window',  
         'USER': 'admin',  
-        'PASSWORD':'12345678',  
-        'HOST': 'rarewindowbackend.chlm2knjphe4.us-west-2.rds.amazonaws.com',  
+        'PASSWORD':'rarewindowbackend123',  
+        'HOST': 'backend.cg2unp3slbbx.ap-south-1.rds.amazonaws.com',  
         'PORT': '3306',
     }  
 }
