@@ -131,7 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
-MEDIA_URL = 'http://127.0.0.1:8000/media/'
+MEDIA_URL = 'http://54.202.144.39/'
 # todo: change mail credentials
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtpout.secureserver.net'
