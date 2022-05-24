@@ -1,6 +1,6 @@
 server {
-    listen 80;
-    server_name https://therarewindow.com;
+    listen 443;
+    server_name therarewindow.com;
     client_max_body_size 64M;
 
     location = /favicon.ico { access_log off; log_not_found off; }
